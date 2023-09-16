@@ -1,0 +1,294 @@
+:root {
+    --main-color:#111111;
+    --secondary-color: white;
+    --third-color: rgba(255, 255, 255, 0.1);
+    --four-color: rgba(255, 255, 255, 0.5);
+
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Cardo', serif;
+    color: var(--secondary-color);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/photo_2023-09-15_16-22-59.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.container {
+
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media(min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+
+}
+
+@media(min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+
+}
+
+@media(min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+
+}
+
+/* ------------------------------------------------------------- */
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.logo {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.logo2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo2 h1 {
+    position: absolute;
+    font-size: 23px;
+    color: var(--secondry-color);
+    margin-top: 30px;
+}
+
+.logo2 img {
+    width: 220px;
+    height: 100px;
+}
+
+span {
+    color: var(--main-color);
+    
+}
+
+.text-form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text {
+    align-items: center;
+    display: flex;
+}
+
+.text h1 {
+    font-size: 60px;
+
+}
+
+.text p {
+    font-size: 35px;
+    position: absolute;
+    color: var(--four-color);
+    margin-top: 80px;
+
+}
+
+.form {
+    margin-top: 70px;
+    padding: 15px 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5%;
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+}
+
+.input-fielr {
+
+    padding: 10px;
+    margin: 5px;
+}
+
+.input-fielr input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 10px 0;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.input-fielr input p {
+    padding-right: 15px;
+}
+
+.input-fielr input::placeholder {
+    color: var(--secondary-color);
+}
+
+.custom-select select {
+    background-color: transparent;
+
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 10px 70px;
+    text-align: center;
+    color: var(--secondary-color);
+
+}
+
+.form .button {
+    padding: 5px 15px;
+    color: var(--secondary-color);
+}
+
+.input-fielr button {
+    background-color: transparent;
+    position: relative;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 10px 125px;
+    text-align: center;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.input-fielr button span {
+    background: var(--main-color);
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.9s;
+    border-radius: 40px;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+footer {
+    margin-top: 150px;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+.social i {
+    font-size: 30px;
+    color: var(--secondary-color);
+    margin-left: 10px;
+}
+
+.social i:hover {
+    color: var(--main-color);
+    transition: 0.5s;
+}
+
+@media (max-width:767px) {
+    .logo h2 {
+        display: none;
+    }
+    .logo2 img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .text-form {
+        text-align: center;
+        display: block;
+    }
+
+    .text h1 {
+        font-size: 30px;
+       margin-left: 15%;
+       margin-right: auto;
+    
+    }
+    .text p{
+        font-size: 20px;
+        margin-left: 10%;
+        margin-right: auto;
+        margin-bottom: 25px;
+
+    }
+    .text-form  {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
+    .input-fielr {
+        padding: 6px;
+    }
+
+    .input-fielr input,
+    .input-fielr select,
+    .input-fielr button {
+        width: 100%;
+    }
+
+
+    .title {
+        padding: 2px;
+        font-size: 15px;
+    }
+
+    .form {
+        padding: 15px 0px;
+
+    }
+
+    footer {
+        margin-top: 185px;
+    }
+
+    .contact {
+        font-size: 10px;
+        height: 35px;
+    }
+
+    .social i {
+        font-size: 20px;
+    }
+}
+
+/* ------------------------------------------------------------- */
